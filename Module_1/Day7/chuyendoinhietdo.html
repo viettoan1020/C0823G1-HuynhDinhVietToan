@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Chuyen doi nhiet do</title>
+</head>
+<body>
+        <input placeholder="Độ c (Celsius)" id="convert" type="number" value="Độ c (Celsius)">
+        <button onclick="submitSucees()" type="submit" value="submit">Submit</button>
+        <p id="dapan"></p>
+            <script>
+    function submitSucees() {
+        var inputdoC = document.getElementById('convert').value;
+        let doC = parseInt(inputdoC);
+        let doF = (doC * 9 / 5) + 32;
+        document.write(doF + " Độ F");
+    }
+</script>
+</body>
+</html>
