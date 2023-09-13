@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xep hang hoc sinh</title>
+</head>
+<body>
+        <script>
+            inputtest = prompt("Nhap diem bai kiem tra :");
+            inputhalftest = prompt("Nhap diem bai kiem tra giua ki :");
+            inputfinaltest = prompt("Nhap diem bai kiem tra cuoi ki :");
+            let test = parseInt(inputtest);
+            let halftest = parseInt(inputhalftest);
+            let finaltest = parseInt(inputfinaltest);
+            let average = (test + (2*halftest) + (3*finaltest))/6;
+                    if (average >= 6.5) {
+                        alert("Ban dat danh hieu hoc sinh gioi");
+                    } else if (average >= 5) {
+                        alert("Ban dat danh hieu hoc sinh kha");
+                    } else  if (average >= 3.5) {
+                        alert("Ban dat danh hieu hoc sinh trung binh");
+                    } else {
+                        alert("Ban dat danh hieu hoc sinh yeu");
+                    }
+        </script>
+
+</body>
+</html>
