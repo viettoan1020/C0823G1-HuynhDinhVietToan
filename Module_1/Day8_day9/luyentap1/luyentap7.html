@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tien dien thoai</title>
+</head>
+<body>
+        <h1> TÍNH TIỀN ĐIỆN THOẠI THÁNG NÀY</h1>
+        <label for="minute1"> Số phút gọi nội mạng :  (VND)</label>
+        <input type="number" name=""  id="minute1">
+            <br>
+            <br>
+        <label for="minute2"> Số phút gọi ngoại mạng :  (VND)</label>
+        <input type="number" name=""  id="minute2">
+
+        <button onclick="kiemTra()">Kiểm Tra Giá Tiền </button>
+        <p id="cost"></p>
+
+            <script>
+                    function kiemTra() {
+                        let minute1 = parseFloat(document.getElementById("minute1").value);
+                        let minute2 = parseFloat(document.getElementById("minute2").value);
+                        let cost ="";
+                            if (minute1==0 && minute2==0){
+                                cost = 50000;
+                            }else if (minute1 >0 && minute2 >0) {
+                                cost = (minute1 * 1500) + (minute2 * 3000);
+                            } else if (minute1 <0 || minute2 <0) {
+                                alert("Số thời gian bạn nhập không đúng. Vui lòng nhập lại");
+                            }
+                            document.getElementById("cost").innerHTML = "Số tiền bạn phải trả là " + cost + "VND";
+
+
+                    }
+            </script>
+</body>
+</html>

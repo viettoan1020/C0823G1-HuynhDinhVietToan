@@ -13,11 +13,11 @@
 <label for="height">Nhập chiều cao (m):</label>
 <input type="text" id="height">
 
-<button onclick="kiem_tra()">Kiểm tra</button>
+<button onclick="kiemTra()">Kiểm tra</button>
 <p id="result"></p>
 
 <script>
-    function kiem_tra() {
+    function kiemTra() {
         let weight = parseFloat(document.getElementById("weight").value);
         let height = parseFloat(document.getElementById("height").value);
         let bmi = weight / (height * height);
