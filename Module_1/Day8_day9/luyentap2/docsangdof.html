@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chuyen doi nhiet do</title>
+</head>
+<body>
+        <h1>CHUYỂN ĐỔI NHIỆT ĐỘ</h1>
+        <label for="doC">Độ C  (C)</label>
+        <input type="text" id="doC">
+        <button onclick="kiemTra()">Kiểm Tra</button>
+        <p id="result"></p>
+
+                <script>
+                    function kiemTra() {
+                        let doC = parseFloat(document.getElementById("doC").value);
+                        let result = doC*1.8 + 32;
+                        document.getElementById("result").innerHTML= result + "F"
+                    }
+                </script>
+
+</body>
+</html>

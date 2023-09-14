@@ -5,27 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46b6c1fc-8061-4074-b2b1-063b1fa38f5e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day8/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day8/.idea/Day8.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day8/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day8/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day8/baimau.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day8/bainhap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day8/bainhap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day8/chisobmi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day8/luyentap1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day8/luyentap2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day8/luyentap3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day8/luyentap4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day8/luyentap5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day8/luyentap6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.idea/untitled.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/nhap.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day8_day9/btcaulenhswitchcase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day8_day9/luyentap2/chuyentumsangft.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day8_day9/luyentap2/dientichhcn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day8_day9/luyentap2/dientichhv.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day8_day9/luyentap2/dientichtamgiac.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day8_day9/luyentap2/docsangdof.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day8_day9/luyentap2/ptrinhbac1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day8_day9/untitled/maytinhdongian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day8_day9/.idea/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +77,7 @@
       <workItem from="1694574516591" duration="31000" />
       <workItem from="1694612903004" duration="303000" />
       <workItem from="1694658138050" duration="112000" />
+      <workItem from="1694694438692" duration="135000" />
     </task>
     <servers />
   </component>

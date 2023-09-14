@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kiểm tra cạnh tam giác</title>
+</head>
+<body>
+<h1>Kiểm tra cạnh tam giác</h1>
+<p>Nhập độ dài ba cạnh a, b, c:</p>
+<input type="text" id="canhA" placeholder="Cạnh a">
+<input type="text" id="canhB" placeholder="Cạnh b">
+<input type="text" id="canhC" placeholder="Cạnh c">
+<button onclick="kiemTraTamGiac()">Kiểm tra</button>
+
+<p>Kết quả:</p>
+<p id="ketQua"></p>
+
+<script>
+    function kiemTraTamGiac() {
+        let a = parseFloat(document.getElementById("canhA").value);
+        let b = parseFloat(document.getElementById("canhB").value);
+        let c = parseFloat(document.getElementById("canhC").value);
+
+        if (a > 0 && b > 0 && c > 0) {
+            if (a + b > c && a + c > b && b + c > a) {
+                document.getElementById("ketQua").innerHTML = "Ba số " + a + ", " + b + ", và " + c + " là độ dài của cạnh của một tam giác.";
+            } else {
+                document.getElementById("ketQua").innerHTML = "Ba số " + a + ", " + b + ", và " + c + " không thể tạo thành cạnh của một tam giác.";
+            }
+        } else {
+            document.getElementById("ketQua").innerHTML = "Vui lòng nhập các số dương.";
+        }
+    }
+</script>
+</body>
+</html>

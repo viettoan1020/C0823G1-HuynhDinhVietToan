@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dien tich tam giac</title>
+</head>
+<body>
+
+<h1>DIỆN TÍCH HÌNH TAM GIÁC</h1>
+<label for="canhA">Chiều dài cạnh a (cm)</label>
+<input type="text" id="canhA">
+
+<label for="canhB">Chiều dài cạnh b  (cm)</label>
+<input type="text" id="canhB">
+
+<button onclick="dienTichTamGiac()"> Tính diện tích</button>
+<p id="result"></p>
+
+<script>
+    function dienTichTamGiac() {
+        let canhA = parseFloat(document.getElementById("canhA").value);
+        let canhB = parseFloat(document.getElementById("canhB").value);
+        let result = canhA*canhB/2;
+        if (canhA > 0 && canhB > 0 ) {
+            document.getElementById("result").innerHTML= result + " cm2";
+        } else  {
+            document.getElementById("result").innerText= "Không phải là hình tam giac";
+        }
+    }
+</script>
+
+
+
+
+</body>
+</html>

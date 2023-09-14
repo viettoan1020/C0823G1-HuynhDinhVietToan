@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kiểm tra tuổi</title>
+</head>
+<body>
+<h1>Kiểm tra tuổi</h1>
+<p>Nhập tuổi:</p>
+<input type="text" id="tuoiInput" placeholder="Nhập tuổi">
+<button onclick="kiemTraTuoi()">Kiểm tra</button>
+
+<p>Kết quả:</p>
+<p id="ketQua"></p>
+
+<script>
+    function kiemTraTuoi() {
+        let age = parseInt(document.getElementById("tuoiInput").value);
+
+        if (age > 0 && tuoi <= 119) {
+            document.getElementById("ketQuaua").innerHTML = tuoi + " là tuổi của một người.";
+        } else {
+            document.getElementById("ketQua").innerHTML = "Số bạn nhập không phải là tuổi của một người.";
+        }
+    }
+</script>
+</body>
+</html>

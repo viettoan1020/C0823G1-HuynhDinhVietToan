@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tính giá điện</title>
+</head>
+<body>
+<h1>Tính giá điện</h1>
+<p>Nhập số kWh tiêu thụ:</p>
+<input type="text" id="soKwh" placeholder="Nhập số kWh">
+<button onclick="tinhGiaDien()">Tính giá</button>
+
+<p>Giá điện tổng cộng:</p>
+<p id="ketqua"></p>
+
+<script>
+    function tinhGiaDien() {
+        var soKwh = parseFloat(document.getElementById("soKwh").value);
+
+        if (!isNaN(soKwh)) {
+            var giaDien = 0;
+
+            if (soKwh < 10) {
+                giaDien = soKwh * 2000;
+            } else if (soKwh <= 20) {
+                giaDien = 10 * 2000 + (soKwh - 10) * 3000;
+            } else if (soKwh <= 30) {
+                giaDien = 10 * 2000 + 10 * 3000 + (soKwh - 20) * 4000;
+            } else {
+                giaDien = 10 * 2000 + 10 * 3000 + 10 * 4000 + (soKwh - 30) * 5000;
+            }
+
+            document.getElementById("ketqua").innerHTML = "Giá điện tổng cộng là: " + giaDien.toFixed(2) + " VNĐ";
+        } else {
+            document.getElementById("ketqua").innerHTML = "Vui lòng nhập số kWh hợp lệ.";
+        }
+    }
+</script>
+</body>
+</html>

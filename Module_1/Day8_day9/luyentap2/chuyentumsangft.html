@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doi tu m sang ft</title>
+</head>
+
+<body>
+            <h1>chuyển đổi từ m sang ft</h1>
+            <label for="donViMet"> Mét (m)</label>
+            <input type="text" id="donViMet">
+
+            <button onclick="chuyenDoi()">Chuyển Đổi</button>
+            <p id="result"></p>
+
+            <script>
+                function chuyenDoi() {
+                    let donViMet = parseFloat(document.getElementById("donViMet").value);
+                    let result = donViMet * 3.2808;
+                    if (donViMet > 0) {
+                        document.getElementById("result").innerHTML = result + " ft";
+                    }else{
+                        document.getElementById("result").innerText = "Không hợp lệ";
+                    }
+                    }
+            </script>
+
+</body>
+</html>

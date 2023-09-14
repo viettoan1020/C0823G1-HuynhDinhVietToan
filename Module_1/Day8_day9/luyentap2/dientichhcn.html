@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dien tich hcn</title>
+</head>
+<body>
+
+        <h1>DIỆN TÍCH HÌNH CHỮ NHẬT</h1>
+        <label for="chieuDai">Chiều dài của hcn  (cm)</label>
+        <input type="text" id="chieuDai">
+
+        <label for="chieuRong">Chiều rộng của hcn   (cm)</label>
+        <input type="text" id="chieuRong">
+
+        <button onclick="dienTichHcn()"> Tính diện tích</button>
+        <p id="result"></p>
+
+    <script>
+        function dienTichHcn() {
+        let chieuDai = parseFloat(document.getElementById("chieuDai").value);
+        let chieuRong = parseFloat(document.getElementById("chieuRong").value);
+        let result = chieuDai*chieuRong;
+            if (chieuDai > 0 && chieuRong > 0 ) {
+                document.getElementById("result").innerHTML= result + " cm2";
+            } else if (chieuRong < 0 || chieuDai < 0) {
+                document.getElementById("result").innerHTML= "Không phải là hình chữ nhật"
+            }
+        }
+    </script>
+
+
+
+
+</body>
+</html>

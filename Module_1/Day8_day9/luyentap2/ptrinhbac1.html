@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Phương Trình Bậc 1</title>
+</head>
+<body>
+        <h1>PHƯƠNG TRÌNH BẬC 1
+              ax+b=0              </h1>
+
+        <label for="soA">Giá trị số a </label>
+        <input type="text" id="soA">
+            <br>
+            <br>
+        <label for="soB">Giá trị số b </label>
+        <input type="text" id="soB">
+
+        <button onclick="thucHien()">Thực hiện</button>
+        <p id="result"></p>
+
+                <script>
+                    function thucHien() {
+                        let soA = parseFloat(document.getElementById("soA").value);
+                        let soB = parseFloat(document.getElementById("soB").value);
+                        let x = (-soB)/soA
+                        if (soA == 0 && soB ==0) {
+                            document.getElementById("result").innerText = "Phương trình vô số nghiệm";
+                        } else if (soA == 0 && soB != 0) {
+                            document.getElementById("result").innerText = "Phương trình vô nghiệm";
+                        } else {
+                            document.getElementById("result").innerHTML = "x =" + x;
+                        }
+                    }
+                </script>
+
+
+
+
+</body>
+</html>
