@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dãy số fibonaci</title>
+</head>
+<body>
+        <h4>Dãy số Fibonaci</h4>
+        <script>
+            let a = 0;
+            let b = 1;
+            document.write(a + "</br>");
+            document.write(b + "<br>");
+            for (let i = 0; i < 18; i++) {
+                let next = a + b;
+                document.write(next + "</br>");
+                a = b;
+                b = next;
+            }
+        </script>
+
+</body>
+</html>

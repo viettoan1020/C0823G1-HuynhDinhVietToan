@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><Tính tổng của 20 số đầu tiên></Tính></title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let numberA = "";
+
+    while (true) {
+        let next = a + b;
+        if (next % 5 === 0) {
+            numberA = next;
+            break;
+        }
+        a = b;
+        b = next;
+    }
+
+    if (numberA !== null) {
+        document.write(numberA + " là số đầu tiên trong dãy Fibonacci chia hết cho 5.");
+
+    } else {
+        document.write("Không có số nào trong dãy Fibonacci chia hết cho 5.");
+    }
+</script>
+
+</body>
+</html>
