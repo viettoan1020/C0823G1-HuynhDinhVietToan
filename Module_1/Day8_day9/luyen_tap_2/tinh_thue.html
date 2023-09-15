@@ -8,13 +8,13 @@
     <title>Tính thuế thu nhập cá nhân</title>
 </head>
 <body>
-        <h1>Tính thuế thu nhập cá nhân</h1>
-        <p>Nhập thu nhập hằng năm (VND):</p>
-        <input type="text" id="thuNhap" placeholder="Nhập thu nhập">
-        <button onclick="tinhThue()">Tính thuế</button>
+<h1>Tính thuế thu nhập cá nhân</h1>
+<p>Nhập thu nhập hằng năm (VND):</p>
+<input type="text" id="thuNhap" placeholder="Nhập thu nhập">
+<button onclick="tinhThue()">Tính thuế</button>
 
-        <p>Số tiền thuế thu nhập cá nhân:</p>
-        <p id="ketQua"></p>
+<p>Số tiền thuế thu nhập cá nhân:</p>
+<p id="ketQua"></p>
 
 <script>
     function tinhThue() {
@@ -24,7 +24,7 @@
             if (thuNhap <= 5000000) {
                 thue = 0;
             } else if (thuNhap <= 10000000) {
-                thue = thuNhap  * 0.05;
+                thue = thuNhap * 0.05;
             } else if (thuNhap <= 18000000) {
                 thue = thuNhap * 0.1;
             } else if (thuNhap <= 32000000) {

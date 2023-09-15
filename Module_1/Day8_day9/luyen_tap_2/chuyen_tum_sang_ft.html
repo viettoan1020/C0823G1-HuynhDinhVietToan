@@ -9,24 +9,24 @@
 </head>
 
 <body>
-            <h1>chuyển đổi từ m sang ft</h1>
-            <label for="donViMet"> Mét (m)</label>
-            <input type="text" id="donViMet">
+<h1>chuyển đổi từ m sang ft</h1>
+<label for="donViMet"> Mét (m)</label>
+<input type="text" id="donViMet">
 
-            <button onclick="chuyenDoi()">Chuyển Đổi</button>
-            <p id="result"></p>
+<button onclick="chuyenDoi()">Chuyển Đổi</button>
+<p id="result"></p>
 
-            <script>
-                function chuyenDoi() {
-                    let donViMet = parseFloat(document.getElementById("donViMet").value);
-                    let result = donViMet * 3.2808;
-                    if (donViMet > 0) {
-                        document.getElementById("result").innerHTML = result + " ft";
-                    }else{
-                        document.getElementById("result").innerText = "Không hợp lệ";
-                    }
-                    }
-            </script>
+<script>
+    function chuyenDoi() {
+        let donViMet = parseFloat(document.getElementById("donViMet").value);
+        let result = donViMet * 3.2808;
+        if (donViMet > 0) {
+            document.getElementById("result").innerHTML = result + " ft";
+        } else {
+            document.getElementById("result").innerText = "Không hợp lệ";
+        }
+    }
+</script>
 
 </body>
 </html>

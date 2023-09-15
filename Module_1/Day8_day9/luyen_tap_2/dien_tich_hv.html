@@ -8,25 +8,25 @@
     <title>Dien tich hinh vuong</title>
 </head>
 <body>
-        <h1>TÍNH DIỆN TÍCH HÌNH VUÔNG</h1>
-        <label for="doDaiCanh">Độ dài mỗi cạnh      (cm) </label>
-        <input type="text" id="doDaiCanh">
+<h1>TÍNH DIỆN TÍCH HÌNH VUÔNG</h1>
+<label for="doDaiCanh">Độ dài mỗi cạnh (cm) </label>
+<input type="text" id="doDaiCanh">
 
-        <button onclick="dienTich()">Tính diện tích </button>
-        <p id="result"></p>
+<button onclick="dienTich()">Tính diện tích</button>
+<p id="result"></p>
 
-            <script>
-                function dienTich() {
-                    let doDaiCanh = parseFloat(document.getElementById("doDaiCanh").value);
-                    let result = doDaiCanh*doDaiCanh;
-                    if (doDaiCanh >0) {
-                        document.getElementById("result").innerHTML= result + " cm2";
-                    } else  if (doDaiCanh==0) {
-                        document.getElementById("result").innerText= "Khong phai la hinh vuong";
-                    }else {
-                        document.getElementById("result").innerText="Do dai canh phai lon hon 0";
-                    }
-                }
-            </script>
+<script>
+    function dienTich() {
+        let doDaiCanh = parseFloat(document.getElementById("doDaiCanh").value);
+        let result = doDaiCanh * doDaiCanh;
+        if (doDaiCanh > 0) {
+            document.getElementById("result").innerHTML = result + " cm2";
+        } else if (doDaiCanh == 0) {
+            document.getElementById("result").innerText = "Khong phai la hinh vuong";
+        } else {
+            document.getElementById("result").innerText = "Do dai canh phai lon hon 0";
+        }
+    }
+</script>
 </body>
 </html>

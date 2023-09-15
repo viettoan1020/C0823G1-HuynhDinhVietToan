@@ -8,27 +8,27 @@
     <title>Tinh hoa hong</title>
 </head>
 <body>
-    <h1>TÍNH HOA HỒNG MỖI THÁNG</h1>
-    <label for="sales"> Nhập tổng doanh số tháng này :  (VND)</label>
-    <input type="number" name=""  id="sales">
+<h1>TÍNH HOA HỒNG MỖI THÁNG</h1>
+<label for="sales"> Nhập tổng doanh số tháng này : (VND)</label>
+<input type="number" name="" id="sales">
 
-<button onclick="kiemTra()">Kiểm Tra </button>
+<button onclick="kiemTra()">Kiểm Tra</button>
 <p id="result"></p>
 
-        <script>
-            function kiemTra() {
-                let sales = parseFloat(document.getElementById("sales").value);
-                let result = "";
-                if (sales > 0 && sales < 10000000) {
-                    result = sales * 5 / 100;
-                } else  if (sales >= 10000000 && sales <=20000000) {
-                    result = sales * 10 / 100;
-                } else if (sales > 20000000) {
-                    result = sales * 15 / 100;
-                }
-                document.getElementById("result").innerHTML = "Lợi nhuận thu đuược tháng này là:" + result + "VND";
-            }
-        </script>
+<script>
+    function kiemTra() {
+        let sales = parseFloat(document.getElementById("sales").value);
+        let result = "";
+        if (sales > 0 && sales < 10000000) {
+            result = sales * 5 / 100;
+        } else if (sales >= 10000000 && sales <= 20000000) {
+            result = sales * 10 / 100;
+        } else if (sales > 20000000) {
+            result = sales * 15 / 100;
+        }
+        document.getElementById("result").innerHTML = "Lợi nhuận thu đuược tháng này là:" + result + "VND";
+    }
+</script>
 
 </body>
 

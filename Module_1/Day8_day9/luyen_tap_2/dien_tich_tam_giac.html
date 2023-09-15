@@ -13,7 +13,7 @@
 <label for="canhA">Chiều dài cạnh a (cm)</label>
 <input type="text" id="canhA">
 
-<label for="canhB">Chiều dài cạnh b  (cm)</label>
+<label for="canhB">Chiều dài cạnh b (cm)</label>
 <input type="text" id="canhB">
 
 <button onclick="dienTichTamGiac()"> Tính diện tích</button>
@@ -23,16 +23,14 @@
     function dienTichTamGiac() {
         let canhA = parseFloat(document.getElementById("canhA").value);
         let canhB = parseFloat(document.getElementById("canhB").value);
-        let result = canhA*canhB/2;
-        if (canhA > 0 && canhB > 0 ) {
-            document.getElementById("result").innerHTML= result + " cm2";
-        } else  {
-            document.getElementById("result").innerText= "Không phải là hình tam giac";
+        let result = canhA * canhB / 2;
+        if (canhA > 0 && canhB > 0) {
+            document.getElementById("result").innerHTML = result + " cm2";
+        } else {
+            document.getElementById("result").innerText = "Không phải là hình tam giac";
         }
     }
 </script>
-
-
 
 
 </body>
