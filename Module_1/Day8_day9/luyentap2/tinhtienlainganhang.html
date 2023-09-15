@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tính tiền lãi ngân hàng</title>
+</head>
+<body>
+    <h1>TÍNH TIỀN LÃI NGÂN HÀNG</h1>
+    <p>Nhập số tiền bạn gửi vào tiết kiệm  (VND)</p>
+    <input type="text" id="tietKiem" placeholder="Nhập tiền gửi tiết kiệm">
+
+
+    <p>Thời hạn bạn muốn gửi   (tháng)</p>
+    <input type="text" id="thoiHan" placeholder="Nhập thời hạn">
+
+    <p>Phần trăm lãi bạn được hưởng  (%)</p>
+    <input type="text" id="phanTram" placeholder="Nhập phần trăm lãi">
+
+    <button onclick="tongTien()" >Tính tổng tiền</button>
+    <p id="ketQua"></p>
+
+        <script>
+            function tongTien() {
+                let tietKiem = parseFloat(document.getElementById("tietKiem").value);
+                let thoiHan = parseInt(document.getElementById("thoiHan").value);
+                let phanTram = parseFloat(document.getElementById("phanTram").value);
+                let result = "";
+                    if ( tietKiem>0 && thoiHan > 0 && phanTram>0 ) {
+                        result = tietKiem * Math.pow((1 + phanTram / 100), thoiHan);
+                        document.getElementById("ketQua").innerHTML = result + " VND";
+                    } else {
+                        document.getElementById("ketQua").innerText  = "Thông tin bạn nhập vào không hợp lệ";
+
+                    }
+            }
+        </script>
+</body>
+</html>
