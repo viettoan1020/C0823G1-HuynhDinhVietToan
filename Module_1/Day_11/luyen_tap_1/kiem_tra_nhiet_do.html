@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kiểm tra nhiệt độ</title>
+</head>
+<body>
+<script>
+    let i = prompt("Nhập nhiệt độ");
+    while (i > -273)
+        if (i > 100) {
+            alert("Bạn nên giảm nhiệt độ");
+            break;
+        } else if (i < 20) {
+            alert("Bạn nên tăng nhiệt độ");
+            break;
+        } else {
+            alert("Nhiệt độ của bạn đang ổn định");
+            break;
+        }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tổng 30 số đầu tiên chia hết cho 7</title>
+</head>
+<body>
+<h1>Tổng 30 số tự nhiên đầu tiên chia hết cho 7</h1>
+<p id="result"></p>
+
+<script>
+    const resultElement = document.getElementById("result");
+    let sum = 0;
+    let count = 0;
+    let currentNumber = 1;
+
+    while (count <= 30) {
+        if (currentNumber % 7 === 0) {
+            sum += currentNumber;
+            count++;
+        }
+        currentNumber++;
+    }
+
+    resultElement.textContent = `Tổng của 30 số tự nhiên đầu tiên chia hết cho 7 là: ${sum}`;
+</script>
+</body>
+</html>

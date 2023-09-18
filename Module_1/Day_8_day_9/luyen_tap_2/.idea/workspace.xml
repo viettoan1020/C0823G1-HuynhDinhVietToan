@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="739e93c6-154b-4ae9-befc-91afefc50478" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Day11/luyen_tap1/ktranhietdo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day11/luyen_tap1/ktranhietdo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/luyen_tap_1/tong_30_so_chia_het_cho_7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day11/luyen_tap_1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day11/luyen_tap_1/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day11/luyen_tap_1/.idea/luyen_tap1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day11/luyen_tap_1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day11/luyen_tap_1/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day11/luyen_tap_1/chiahetcho5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day11/luyen_tap_1/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day11/luyen_tap_1/demtu1den100.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day11/luyen_tap_1/ktranhietdo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day11/luyen_tap_1/tinhtong20sodau.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +48,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/C0823G1-HuynhDinhVietToan/Module_1/Day11/luyen_tap_1/tinh_tong_20_so_dau.html&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -91,6 +100,9 @@
       <workItem from="1694928277424" duration="4000" />
       <workItem from="1694928287289" duration="3000" />
       <workItem from="1694928296389" duration="3000" />
+      <workItem from="1694932373531" duration="1196000" />
+      <workItem from="1694939177434" duration="708000" />
+      <workItem from="1695000406649" duration="265000" />
     </task>
     <servers />
   </component>

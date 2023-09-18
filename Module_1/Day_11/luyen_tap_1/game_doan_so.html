@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game đoán số</title>
+</head>
+<body>
+<h1>Game đoán số</h1>
+
+<button onclick="doanSo()">Bắt đầu trò chơi</button>
+
+<script>
+    function doanSo() {
+        let maxNumber = +prompt("Nhập vào số lớn nhất bạn muốn đoán");
+        let randomNumber = Math.floor(Math.random() * (maxNumber - 1)) + 1;
+        let numberOfTries = 4;
+        let guess;
+
+        for (let count = 1; count <= numberOfTries; count++) {
+            guess = +prompt("Lần đoán thứ " + count + ": Nhập số bạn đoán trong khoảng từ 1 đến " + maxNumber);
+
+            if (guess === randomNumber) {
+                alert("Bạn đã đoán đúng số " + randomNumber + ". Chúc mừng bạn!");
+                break;
+            } else if (count === numberOfTries) {
+                alert("Bạn đã hết số lần đoán. Số đúng là " + randomNumber + ".");
+            } else if (guess < randomNumber) {
+                alert("Số bạn đoán bé hơn số đúng.");
+            } else {
+                alert("Số bạn đoán lớn hơn số đúng.");
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
