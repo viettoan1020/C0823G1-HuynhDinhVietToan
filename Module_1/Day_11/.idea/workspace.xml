@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f2e9fedf-3ffa-46e2-8e22-130577ad401e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bang_cuu_chuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luyen_tap_2/day_so_fibonaci.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luyen_tap_2/hinh_chu_nhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luyen_tap_2/tam_giac_vuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luyen_tap_2/tam_giac_vuong_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luyen_tap_2/tinh_giai_thua_cua_so_duong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luyen_tap_2/tinh_lai_suat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/so_nguyen_to.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Day11.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luyen_tap_1/chia_het_cho_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/luyen_tap_1/chia_het_cho_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luyen_tap_1/tong_30_so_chia_het_cho_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/luyen_tap_1/tong_30_so_chia_het_cho_7.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2VYwgaUunu1yP8rSKTmBbs0h8iA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JavaScript Debug.tinh_lai_suat.html">
+    <configuration name="bang_cuu_chuong.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Day_11/Module_1/Day_11/bang_cuu_chuong.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="hinh_chu_nhat.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Day_11/Module_1/Day_11/luyen_tap_2/hinh_chu_nhat.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="so_nguyen_to.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Day_11/Module_1/Day_11/so_nguyen_to.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="tinh_lai_suat.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Day_11/Module_1/Day_11/luyen_tap_2/tinh_lai_suat.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.tinh_lai_suat.html" />
+        <item itemvalue="JavaScript Debug.bang_cuu_chuong.html" />
+        <item itemvalue="JavaScript Debug.hinh_chu_nhat.html" />
+        <item itemvalue="JavaScript Debug.so_nguyen_to.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2e9fedf-3ffa-46e2-8e22-130577ad401e" name="Changes" comment="" />
+      <created>1695026433566</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695026433566</updated>
+      <workItem from="1695026434569" duration="3318000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

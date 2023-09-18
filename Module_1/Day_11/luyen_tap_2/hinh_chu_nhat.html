@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>In hình chữ nhật</title>
+</head>
+<body>
+<h2> In hình chữ nhật </h2>
+<script>
+    debugger
+    let c = "*";
+    let b = "&nbsp&nbsp";
+    for (let i = 1; i <= 8; i++) {
+        for (let j = 1; j <= 19; j++) {
+            if (i == 1 || i == 8) {
+                document.write(c);
+            } else if (j == 1 || j == 19) {
+                document.write(c);
+            } else {
+                document.write(b);
+            }
+        }
+        document.write('<br>');
+    }
+</script>
+</body>
+</html>

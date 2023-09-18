@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tính lãi suất</title>
+</head>
+<body>
+<label for="money">Số tiền ban đầu</label>
+<input placeholder="Số tiền ban đầu" id="money">
+<label for="ls">Lãi suất</label>
+<input placeholder="Lãi suất" id="ls">
+<label for="month">Số tháng</label>
+<input placeholder="Số tháng cho vay" id="month">
+<button type="button" onclick="check()">Kiểm tra</button>
+<br>
+<p id="result">Số tiền phải trả:</p>
+
+<script>
+    function check() {
+        let money = +document.getElementById('money').value;
+        ls = +document.getElementById('ls').value;
+        month = +document.getElementById('month').value;
+        if (month <= 0 || ls <= 0 || money <= 0) {
+            document.write("Số nhập vào không hợp lệ")
+        } else {
+            for (i = 1; i <= month; i++) {
+                month1 = money * (ls / 12) / 100;
+                tong = money + month1;
+                money = tong;
+            }
+        }
+        document.getElementById('result').innerText = 'Số tiền phải trả:' + tong + " VNĐ";
+    }
+</script>
+</body>
+</html>

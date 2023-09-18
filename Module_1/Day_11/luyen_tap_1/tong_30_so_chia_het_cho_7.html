@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,23 +9,20 @@
 </head>
 <body>
 <h1>Tổng 30 số tự nhiên đầu tiên chia hết cho 7</h1>
-<p id="result"></p>
+<p id="ketQua"></p>
 
 <script>
-    const resultElement = document.getElementById("result");
-    let sum = 0;
-    let count = 0;
-    let currentNumber = 1;
+    const ketQuaElement = document.getElementById("ketQua");
+    let tong = 0;
+    let dem = 0;
 
-    while (count <= 30) {
-        if (currentNumber % 7 === 0) {
-            sum += currentNumber;
-            count++;
+    for (let soHienTai = 1; dem < 30; soHienTai++) {
+        if (soHienTai % 7 === 0) {
+            tong += soHienTai;
+            dem++;
         }
-        currentNumber++;
     }
-
-    resultElement.textContent = `Tổng của 30 số tự nhiên đầu tiên chia hết cho 7 là: ${sum}`;
+    document.getElementById("ketQua").innerHTML = "Tổng của 30 số tự nhiên đầu tiên chia hết cho 7 là: " + tong;
 </script>
 </body>
 </html>

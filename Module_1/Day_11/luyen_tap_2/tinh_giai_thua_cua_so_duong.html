@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tính giai thừa của một số dương</title>
+</head>
+<body>
+<h3>Tính giai thừa cuả một số nguyên dương</h3>
+<label for="inputNumber"> Nhập một số nguyên dương :</label>
+<input type="number" id="inputNumber">
+
+<button onclick="thucHien()">Thực hiện</button>
+<p id="result"></p>
+
+<script>
+    function thucHien() {
+        let number = document.getElementById("inputNumber").value;
+        let result = 1;
+        for (let i = 2; i <= number; i++) {
+            result *= i;
+        }
+
+        document.getElementById("result").innerHTML = "Giai thừa của " + number + " là " + result;
+    }
+</script>
+
+</body>
+</ht
