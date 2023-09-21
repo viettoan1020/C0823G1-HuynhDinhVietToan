@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số lớn nhất và tính trung bình của các phần tử trong mảng</title>
+</head>
+<body>
+<script>
+    let arrs = [1, 2, 3, 4, 5, 6];
+    let max = arrs[0];
+    let tong = 0;
+
+    for (let i = 0; i < arrs.length; i++) {
+        if (max < arrs[i]) {
+            max = arrs[i];
+        }
+        tong += arrs[i];
+    }
+
+    let avg = tong / arrs.length;
+    document.write("Phần tử lớn nhất trong mảng là: " + max + "<br>");
+    document.write("Trung bình của các phần tử trong mảng là: " + avg);
+</script>
+</body>
+</html>

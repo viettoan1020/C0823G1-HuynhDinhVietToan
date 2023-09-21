@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let inputRow = +prompt("Nhap so hang: ");
+    let inputCol = +prompt("Nhap so cot: ");
+
+    let arr2d = new Array(inputRow);
+
+    for (let row = 0; row < arr2d.length; row++) {
+        arr2d[row] = new Array(inputCol);
+
+        for (let col = 0; col < arr2d[row].length; col++) {
+            arr2d[row][col] = +prompt("input value at [" + row + "][" + col + "]: ");
+            document.write(arr2d[row][col] + " ");
+        }
+        document.write("</br>");
+    }
+
+</script>
+</body>
+</html>

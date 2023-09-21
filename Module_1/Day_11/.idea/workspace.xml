@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2e9fedf-3ffa-46e2-8e22-130577ad401e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bang_cuu_chuong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luyen_tap_2/day_so_fibonaci.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luyen_tap_2/hinh_chu_nhat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luyen_tap_2/tam_giac_vuong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luyen_tap_2/tam_giac_vuong_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luyen_tap_2/tinh_giai_thua_cua_so_duong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luyen_tap_2/tinh_lai_suat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/so_nguyen_to.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Day11.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luyen_tap_1/chia_het_cho_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/luyen_tap_1/chia_het_cho_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luyen_tap_1/tong_30_so_chia_het_cho_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/luyen_tap_1/tong_30_so_chia_het_cho_7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day11/luyen_tap_1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,28 +23,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2VYwgaUunu1yP8rSKTmBbs0h8iA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JavaScript Debug.tinh_lai_suat.html">
     <configuration name="bang_cuu_chuong.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Day_11/Module_1/Day_11/bang_cuu_chuong.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -87,6 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695026433566</updated>
       <workItem from="1695026434569" duration="3318000" />
+      <workItem from="1695113745988" duration="85000" />
     </task>
     <servers />
   </component>

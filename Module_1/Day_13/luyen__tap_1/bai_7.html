@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    let v = parseInt(prompt("Nhập số nguyên v"));
+    let index = -1;
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] === v) {
+            index = i;
+            break;
+        }
+    }
+    if (index !== -1) {
+        for (j = index; j < arr.length - 1; j++) {
+            arr[j] = arr[j + 1];
+        }
+        arr[arr.length - 1] = 0;
+        document.write("Giá trị " + v + " đã được xóa khỏi mảng" + "</br>");
+    } else {
+        document.write("Giá trị " + v + " không thuộc mảng" + "</br>");
+    }
+    document.write(" Mảng sau khi đã được xóa :" + arr);
+
+
+</script>
+</body>
+</html>
