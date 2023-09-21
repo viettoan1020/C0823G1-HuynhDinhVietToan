@@ -5,8 +5,15 @@
     <title>Sắp xếp mảng theo thứ tự giảm dần</title>
 </head>
 <body>
-        <script>
+<script>
+    let arr = [];
+    let n = prompt("Số lượng phần tử muốn nhập :");
+    for (i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Nhập số nguyên:"));
+    }
+    arr.sort((a, b) => b - a);
+    document.write("Mảng theo thứ tự giảm dần: " + arr);
 
-        </script>
+</script>
 </body>
 </html>

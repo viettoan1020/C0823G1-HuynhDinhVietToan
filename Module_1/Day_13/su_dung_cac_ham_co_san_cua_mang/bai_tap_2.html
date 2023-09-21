@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chèn dấu - giữa số chẵn</title>
+</head>
+<body>
+<label for="soNhapVao">Nhập số:</label>
+<input type="text" id="soNhapVao">
+<button onclick="chenDauHypen()">Chèn Dấu</button>
+<p id="ketQua"></p>
+
+<script>
+    function chenDauHypen() {
+        let soNhapVao = document.getElementById('soNhapVao').value;
+        let mangKetQua = [];
+
+        for (let i = 0; i < soNhapVao.length; i++) {
+            if (parseInt(soNhapVao[i]) % 2 === 0) {
+                mangKetQua.push(soNhapVao[i]);
+
+                if (i < soNhapVao.length - 1 && parseInt(soNhapVao[i + 1]) % 2 === 0) {
+                    mangKetQua.push('-');
+                }
+            } else {
+                mangKetQua.push(soNhapVao[i]);
+            }
+        }
+
+        const ketQua = mangKetQua.join('');
+        document.getElementById('ketQua').textContent = 'Kết quả của chương trình là : ' + ketQua;
+    }
+</script>
+</body>
+</html>

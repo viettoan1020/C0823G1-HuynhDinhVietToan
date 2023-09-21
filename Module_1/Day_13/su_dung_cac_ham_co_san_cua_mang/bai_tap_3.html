@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hoa những chữ cái viết thường trong chuỗi</title>
+</head>
+<body>
+<script>
+    var str = 'The Quick Brown Fox';
+    var chuInHoa = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var chuInThuong = 'abcdefghijklmnopqrstuvwxyz';
+    var result = [];
+
+    for (var x = 0; x < str.length; x++) {
+        var element = str[x];
+
+        if (chuInHoa.indexOf(element) !== -1) {
+            result.push(element.toLowerCase());
+        } else if (chuInThuong.indexOf(element) !== -1) {
+            result.push(element.toUpperCase());
+        } else {
+            result.push(element);
+        }
+    }
+
+    var s = result.join('');
+    document.write(s);
+
+</script>
+</body>
+</html>
