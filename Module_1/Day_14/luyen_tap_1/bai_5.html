@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Aquila", "Ursa Major", "Leo"];
+
+    function findIndex() {
+        let star = prompt("Nhập một ngôi sao trong chuỗi 1 :");
+        let indexArr1 = 0;
+        let result = "";
+        for (i = 0; i < arr1.length; i++) {
+            if (star == arr1[i]) {
+                indexArr1 = i;
+                for (j = 0; j < arr2.length; j++) {
+                    if (indexArr1 == j) {
+                        result = arr2[j];
+                        return result;
+                    } else {
+                        result = "Không có chòm sao bạn muốn tìm"
+                        return result;
+                    }
+                }
+
+            }
+        }
+    }
+    document.write(findIndex());
+</script>
+</body>
+</html>
