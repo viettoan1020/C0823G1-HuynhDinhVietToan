@@ -2,11 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kiểm tra ký tự</title>
+    <title>Title</title>
 </head>
 <body>
-        <script>
-
-        </script>
+<script>
+    let arr = ["a","b","c","a",'e','f'];
+    let str = "b";
+    function kiemTra(a,b) {
+        let value = false;
+        let count = 0;
+        for (i = 0; i <= a.length; i++) {
+            for (j = 0; j < b.length; j++) {
+                if (a[i] === b[j]) {
+                    value = true;
+                    count ++;
+                }
+            }
+        }
+        if (value === false){
+            count = -1;
+        }
+        alert(count);
+    }
+    kiemTra(str,arr);
+</script>
 </body>
 </html>
