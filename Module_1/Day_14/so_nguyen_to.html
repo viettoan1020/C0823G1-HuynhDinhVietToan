@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên tố</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập một số nguyên bất kì");
+
+    function kiemTra(number) {
+        let count = 0;
+        for (let i = 1; i <= number; i++) {
+            if (number % i === 0) {
+                count++;
+            }
+        }
+        if (count == 2) {
+            alert("Số " + number + " là số nguyên tố");
+        } else {
+            alert("Số " + number + " không phải là số nguyên tố");
+        }
+        return number;
+    }
+
+    kiemTra(a)
+</script>
+</body>
+</html>
