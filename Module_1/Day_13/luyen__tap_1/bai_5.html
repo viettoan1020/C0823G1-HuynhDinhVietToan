@@ -1,19 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Đếm số nguyên âm</title>
 </head>
 <body>
 <script>
-    let arrs = [-1, 3, 5, 4, -2, -4];
+    let str = "viet toan";
+    let array = str.split("");
     let count = 0;
-    for (i = 0; i < arrs.length; i++) {
-        if (arrs[i] < 0) {
-            count = count + 1;
+    let checkArray = ["u", "e", 'o', 'a', 'i'];
+    for (let i = 0; i<array.length; i++) {
+        for (let j = 0 ; j < array.length; j++){
+            if (array[i] === checkArray[j] ){
+                count++;
+            }
         }
     }
-    document.write("Có " + count + " phần tử là số nguyên âm")
+    document.write(count);
+
 </script>
 </body>
 </html>

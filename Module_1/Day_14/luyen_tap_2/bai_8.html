@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược mảng</title>
+</head>
+<body>
+<script>
+    function daoNguocMang(arr) {
+        let mangDaoNguoc = [];
+        for (let i = arr.length - 1; i >= 0; i--) {
+            mangDaoNguoc.push(arr[i]);
+        }
+        return mangDaoNguoc;
+    }
+
+    // Sử dụng hàm để đảo ngược một mảng
+    let mangBanDau = [1, 2, 3, 4, 5];
+    let mangNguoc = daoNguocMang(mangBanDau);
+
+    document.write("Mảng ban đầu:", mangBanDau + "</br>");
+    document.write("Mảng đã đảo ngược:", mangNguoc);
+
+</script>
+</body>
+</html>

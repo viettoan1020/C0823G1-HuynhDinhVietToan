@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số lớn nhất trong 3 số nguyên nhập vào</title>
+</head>
+<body>
+<script>
+    function timSoLonNhat(a, b, c) {
+        let max = a;
+        if (b > max) {
+            max = b;
+        }
+        if (c > max) {
+            max = c;
+        }
+        return max;
+    }
+
+    let inputA = parseInt(prompt("Nhập vào số nguyên a"));
+    let inputB = parseInt(prompt("Nhập vào số nguyên b"));
+    let inputC = parseInt(prompt("Nhập vào số nguyên c"));
+
+    if (!isNaN(inputA) && !isNaN(inputB) && !isNaN(inputC)) {
+        let max = timSoLonNhat(inputA, inputB, inputC);
+        alert("Số lớn nhất trong 3 số là: " + max);
+    } else {
+        alert(" số bạn nhập không hợp lệ ");
+    }
+</script>
+</body>
+</html>

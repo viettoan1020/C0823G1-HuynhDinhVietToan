@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="kiemTra">Nhập 1 câu:</label>
+<input type="text" id="kiemTra">
+<button type="button" onclick="demTu ()">Kiểm tra</button>
+<p id="result"></p>
+<script>
+    function demTu() {
+        let clickMe = document.getElementById('kiemTra').value;
+        clickMe.toString();
+        let section = clickMe.length;
+        document.getElementById("result").innerHTML = "Số chuỗi mới :" + " " + section;
+    }
+</script>
+</body>
+</html>

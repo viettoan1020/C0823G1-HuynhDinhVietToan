@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa của một số nguyên</title>
+</head>
+<body>
+<script>
+    function giaiThua() {
+        let number = parseInt(prompt("Nhập một số nguyên"));
+        if (!isNaN(number) && number >= 0) {
+            let result = 1;
+            for (i = 1; i <= number; i++) {
+                result *= i;
+            }
+            alert("Giai thừa của số nguyên trên = " + result);
+        } else {
+            alert("Dữ liệu bạn nhập vào không hợp lệ");
+        }
+    }
+
+    giaiThua();
+</script>
+</body>
+</html>

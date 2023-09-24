@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên dương</title>
+</head>
+<body>
+<script>
+    function kiemTra(a) {
+        let result = "";
+        if (!isNaN(a) && a > 0) {
+            result = "True";
+        } else {
+            result = "False";
+        }
+        return result;
+    }
+    let inputA = parseInt(prompt("Nhập số nguyên dương:"));
+    let result = kiemTra(inputA);
+    alert(result);
+
+</script>
+</body>
+</html>
