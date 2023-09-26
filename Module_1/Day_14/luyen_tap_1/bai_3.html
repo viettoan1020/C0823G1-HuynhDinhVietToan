@@ -5,21 +5,22 @@
     <title>So sánh hai tham số trong hàm </title>
 </head>
 <body>
-        <script>
-            function soSanh(c,d) {
-            if (c > d) {
-                document.write("Tham số " + c + " lớn hơn tham số " + d);
-            } else {
-                 return c+d;
-                soSanh();
-            }
-            }
-            let c = +prompt("Nhập tham số thứ nhất :");
-            let d = +prompt("Nhập tham số thứ hai :");
-            let result = soSanh(c,d);
-                if (result !== undefined) {
-                    document.write("tổng của hai tham số là :" + result);   
-                }
-        </script>
+<script>
+    function soSanh(c, d) {
+        if (c > d) {
+            document.write("Tham số " + c + " lớn hơn tham số " + d);
+        } else {
+            return c + d;
+            soSanh();
+        }
+    }
+
+    let c = +prompt("Nhập tham số thứ nhất :");
+    let d = +prompt("Nhập tham số thứ hai :");
+    let result = soSanh(c, d);
+    if (result !== undefined) {
+        document.write("tổng của hai tham số là :" + result);
+    }
+</script>
 </body>
 </html>

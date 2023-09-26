@@ -12,15 +12,15 @@
             let metter = parseFloat(prompt("Nhập số m bạn muốn chuyển đổi"));
             let foot = parseFloat(prompt("Nhập số ft bạn muốn chuyển đổi"));
 
-            function Mettoft(metterNum) {
+            function metToFt(metterNum) {
                 return 3.279*metterNum;
             }
-            function fttoMet(footNum) {
+            function ftToMet(footNum) {
                 return 0.305*footNum;
             }
 
-            document.write(foot + "foot=" + Mettoft(foot) + "metter" + "</br>");
-            document.write(metter + "metter=" + fttoMet(metter) + "foot");
+            document.write(foot + "foot=" + metToFt(foot) + "metter" + "</br>");
+            document.write(metter + "metter=" + ftToMet(metter) + "foot");
         </script>
 </body>
 </html>
