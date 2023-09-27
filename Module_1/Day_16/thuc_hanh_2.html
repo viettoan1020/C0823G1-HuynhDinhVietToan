@@ -1,22 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Xây dựng lớp hình tròn</title>
-</head>
-<body>
-        <script>
-            let circle = function (radius) {
-                this.radius = radius;
-                this.getRadius = function () {
-                    return radius;
-                }
-                // Xây dựng công thức tính diện tích hình tròn
-                this.getArea = function () {
-                    return Math.PI * radius * radius;
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Xây dựng lớp hình tròn</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<script>-->
+<!--    function Circle(radius) {-->
+<!--        this.radius = radius;-->
 
-                }
-            }
-        </script>
-</body>
-</html>
+<!--        this.getRadius = function () {-->
+<!--            return this.radius; // Sử dụng 'this' để tham chiếu đến thuộc tính của đối tượng-->
+<!--        }-->
+
+<!--        // Phương thức để tính diện tích hình tròn-->
+<!--        this.getArea = function () {-->
+<!--            return Math.PI * radius * radius; // Sử dụng 'this' ở đây cũng như vậy-->
+<!--        }-->
+<!--    }-->
+
+<!--    // Tạo một phiên bản của lớp Circle-->
+<!--    let circle = new Circle(2);-->
+
+<!--    // Lấy bán kính và diện tích-->
+<!--    let radius = circle.getRadius();-->
+<!--    let area = circle.getArea();-->
+
+<!--    // Hiển thị kết quả-->
+<!--    alert("Bán kính: " + radius + "; Diện tích: " + area);-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
