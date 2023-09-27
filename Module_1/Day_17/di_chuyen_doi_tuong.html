@@ -35,30 +35,33 @@
         }
         this.moveLeft = function () {
             this.left -= 30;
-            console.log(this.left )
+            console.log(this.left)
         }
         this.moveTop = function () {
             this.top -= 30;
-            console.log(this.top )
+            console.log(this.top)
         }
 
     }
+
     var hero = new Hero("songoku.png", 20, 30, 100);
+
     function start() {
         // hero.top < window.innerHeight - hero.size
-        if (hero.left < window.innerWidth - hero.size && hero.top ===20 ) {
+        if (hero.left < window.innerWidth - hero.size && hero.top === 20) {
             hero.moveRight();
         } else if (hero.top < window.innerHeight - hero.size && hero.left > window.innerWidth - hero.size) {
             hero.moveDown();
         } else if (hero.top > window.innerHeight - hero.size) {
-            hero.moveLeft() ;
+            hero.moveLeft();
         }
-        if (hero.left === 0 ){
-            hero.moveTop() ;
+        if (hero.left === 0) {
+            hero.moveTop();
         }
         document.getElementById('game').innerHTML = hero.getHeroElement();
-        setTimeout(start,50)
+        setTimeout(start, 50)
     }
+
     start();
 </script>
 </body>
