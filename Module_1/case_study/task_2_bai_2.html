@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ tam giác cân đặc</title>
+</head>
+<body>
+        <div id="result" style="text-align: center"> </div>
+<script>
+    let h = 5;
+    let character = "";
+
+    for (let i = 1; i <= h; i++) {
+        for (let j = 1; j <= h - i; j++) {
+            character += " ";
+        }
+        for (let k = 1; k <= 2 * i - 1; k++) {
+            character += "*";
+        }
+        character += "</br>";
+
+    }
+    document.getElementById("result").innerHTML = character;
+
+
+</script>
+</body>
+</html>
