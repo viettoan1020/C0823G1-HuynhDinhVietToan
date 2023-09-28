@@ -5,37 +5,39 @@
     <title>Tính thuế thu nhập</title>
 </head>
 <body>
+<h1>Tính thuế thu nhập và lương ròng</h1>
 <table>
     <tr>
         <td>
-            <input type="text" id="input">
+            <label for="salary">Nhập lương (VNĐ):</label>
+            <input type="text" id="salary">
         </td>
         <td>
-            <button onclick="checkResult ()" type="button">Xem</button>
+            <button onclick="checkResult ()" type="button">Kiểm tra</button>
         </td>
     </tr>
 </table>
 <span id="result1"></span>
 <span id="result2"></span>
 <script>
-    let level1 = 0.2;
-    let level2 = 0.1;
-    let level3 = 0.05;
+    let muc1 = 0.2;
+    let muc2 = 0.1;
+    let muc3 = 0.05;
 
     function checkResult() {
-        let value = document.getElementById("input").value;
+        let value = document.getElementById("salary").value;
         if (value >= 15000000) {
-            let tax = value * level1;
+            let tax = value * muc1;
             let salary = value - tax;
             document.getElementById("result1").innerHTML = " Thuế thu nhập là: " + " " + tax + " " + " VND" + "<br>";
             document.getElementById("result2").innerHTML = " Lương ròng là: " + " " + salary + " " + " VND";
         } else if (value >= 7) {
-            let tax = value * level2;
+            let tax = value * muc2;
             let salary = value - tax;
             document.getElementById("result1").innerHTML = " Thuế thu nhập là: " + " " + tax + " " + " VND" + "<br>";
             document.getElementById("result2").innerHTML = " Lương ròng là: " + " " + salary + " " + " VND";
         } else {
-            let tax = value * level3;
+            let tax = value * muc3;
             let salary = value - tax;
             document.getElementById("result1").innerHTML = " Thuế thu nhập là: " + " " + tax + " " + " VND" + "<br>";
             document.getElementById("result2").innerHTML = " Lương ròng là: " + " " + salary + " " + " VND";
