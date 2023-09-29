@@ -29,18 +29,18 @@
         if (value >= 15000000) {
             let tax = value * muc1;
             let salary = value - tax;
-            document.getElementById("result1").innerHTML = " Thuế thu nhập là: " + " " + tax + " " + " VND" + "<br>";
-            document.getElementById("result2").innerHTML = " Lương ròng là: " + " " + salary + " " + " VND";
+            document.getElementById("result1").innerHTML = " Thuế thu nhập là: " + tax + " VND" + "<br>";
+            document.getElementById("result2").innerHTML = " Lương ròng là: " + salary + " VND";
         } else if (value >= 7) {
             let tax = value * muc2;
             let salary = value - tax;
-            document.getElementById("result1").innerHTML = " Thuế thu nhập là: " + " " + tax + " " + " VND" + "<br>";
-            document.getElementById("result2").innerHTML = " Lương ròng là: " + " " + salary + " " + " VND";
+            document.getElementById("result1").innerHTML = " Thuế thu nhập là: " + tax + " VND" + "<br>";
+            document.getElementById("result2").innerHTML = " Lương ròng là: " + salary + " VND";
         } else {
             let tax = value * muc3;
             let salary = value - tax;
-            document.getElementById("result1").innerHTML = " Thuế thu nhập là: " + " " + tax + " " + " VND" + "<br>";
-            document.getElementById("result2").innerHTML = " Lương ròng là: " + " " + salary + " " + " VND";
+            document.getElementById("result1").innerHTML = " Thuế thu nhập là: " + tax + " VND" + "<br>";
+            document.getElementById("result2").innerHTML = " Lương ròng là: " + salary + " VND";
         }
     }
 </script>
