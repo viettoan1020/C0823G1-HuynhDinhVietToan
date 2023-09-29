@@ -5,22 +5,20 @@
     <title>Vẽ tam giác cân đặc</title>
 </head>
 <body>
-<div id="result" style="text-align: center"></div>
 <script>
     let h = +prompt("Nhập chiều cao");
-    let character = "";
 
     for (let i = 1; i <= h; i++) {
-        for (let j = 1; j <= h - i; j++) {
-            character += " ";
+        for (let k = 1; k <= h + i - 1; k++) {
+            if (k <= h - i) {
+                document.write('&nbsp&nbsp');
+            } else {
+                document.write("*");
+            }
         }
-        for (let k = 1; k <= 2 * i - 1; k++) {
-            character += "*";
-        }
-        character += "</br>";
+        document.write("</br>");
 
     }
-    document.getElementById("result").innerHTML = character;
 
 
 </script>
