@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+<div
+        class='container'>
+    <h1>Menu</h1>
+    <p>1. Cafe - 10.000 VNĐ</p>
+    <p>2. Cam vắt - 15.000 VNĐ</p>
+    <p>3. Nước ép cà rốt - 15.000 VNĐ</p>
+    <p>4. Nước ép cà chua - 12.000 VNĐ</p>
+    <p>5. Nước lọc - 5.000 VNĐ</p>
+    <p>6. Nước dừa - 15.000 VNĐ</p>
+    <p>7. Hủy gọi món</p>
+    <button onclick="orderDrink()">Oder</button>
+</div>
+<script>
+    function orderDrink() {
+        let number = [1, 2, 3, 4, 5, 6];
+        let money = [10000, 15000, 15000, 12000, 5000, 15000];
+        let numberOf = 0;
+        let drink = 0;
+        let sum = 0;
+        let sumAll = 0;
+        do {
+            drink = +prompt('Nhập số để có thẻ oder nước');
+            for (let i = 0; i < number.length; i++) {
+                if (drink === number[i]) {
+                    numberOf = +prompt('Bạn muốn mua mấy ly');
+                    sum = money[i] * numberOf;
+                    alert(`Tiền bạn cần phải trả là: ${sum.toLocaleString()}VND`)
+                    sumAll += sum;
+                }
+            }
+            if (drink === 7) {
+                let x = confirm("Bạn không muốn tiếp tục gọi nước?");
+                if (x === true) {
+                    alert(`Tổng tền bạn cần phải thanh toán là ${sumAll.toLocaleString()}VND`);
+                    break;
+                } else {
+                    continue;
+                }
+            }
+            if (drink > 7 || drink < 1 || isNaN(drink)) {
+                alert("Vui lòng nhập số trong menu");
+            }
+        } while (true)
+    }
+</script>
+</body>
+</html>
