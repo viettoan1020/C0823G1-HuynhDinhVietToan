@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = "aaaaaaaaabbbbbbbccccccccc";
+    let result = '';
+    for (let i = 0; i < arr.length; i++) {
+        let count = 0;
+        for (let j = 0; j < result.length; j++) {
+            if (arr[i] === result[j]) {
+                count = 1;
+                break;
+            }
+        }
+        if (count === 0) {
+            result += arr[i];
+        }
+        document.write(result);
+    }
+
+</script>
+</body>
+</html>

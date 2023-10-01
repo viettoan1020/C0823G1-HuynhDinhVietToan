@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    main();
+
+    function main() {
+        debugger
+        let str = prompt("Nhập 1 chuỗi: ");
+        let content = `Chuỗi ban đầu : ${str}  </br>`;
+        let cleanedString = str.replace(/\s+/g, ' ');
+        console.log(cleanedString)
+        let newArr = cleanedString.split(' ');
+        let arrConvert = covertString(newArr)
+        content += `Chuỗi sau khi chuyển đổi: ${arrConvert.join(' ')} ` + "<br>"
+        content += `Từ lớn nhất là : ${findMax(arrConvert)}`
+        document.write(content)
+    }
+
+
+    function covertString(arr) {
+        debugger
+        let arrResult = [];
+        for (let i = 0; i < arr.length; i++) {
+            let word = arr[i].toLowerCase();
+            word = word.charAt(0).toUpperCase() + word.slice(1);
+            arrResult.push(word + ' ');
+        }
+        return arrResult
+    }
+
+    function findMax(arr) {
+        let indexMax = 0;
+        let maxArr = arr[0].length
+        for (let i = 1; i < arr.length; i++) {
+            if (maxArr < arr[i].length) {
+                maxArr = arr[i].length
+                indexMax = i
+            }
+        }
+        return arr[indexMax]
+    }
+
+</script>
+
+</body>
+</html>
